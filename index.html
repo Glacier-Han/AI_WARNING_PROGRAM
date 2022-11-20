@@ -54,7 +54,7 @@
             maxPredictions = model.getTotalClasses();
 
             // Convenience function to setup a webcam
-            const size = 800;
+            const size = 1200;
             const flip = true; // whether to flip the webcam
             webcam = new tmPose.Webcam(size, size, flip); // width, height, flip
             await webcam.setup(); // request access to the webcam
@@ -88,8 +88,8 @@
             if (prediction[0].probability.toFixed(2) > 0.90) {
                 if (status == "squat") {
                     count++
-                    var audio = new Audio(count % 10 + '.mp3');
-                    audio.play();
+                    // var audio = new Audio(count % 10 + '.mp3');
+                    // audio.play();
                     progress = progress-32.7
                     if(progress <= 0) {
                         progress = 327-32.7
