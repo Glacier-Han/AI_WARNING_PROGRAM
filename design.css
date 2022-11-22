@@ -78,9 +78,7 @@ h1 span:before {
   -webkit-animation: 2.5s draw;
   animation: 2.5s draw;
 }
-.canvas{
-  margin : 20px;
-}
+
 h1 span:after {
   display: block;
   content: "";
