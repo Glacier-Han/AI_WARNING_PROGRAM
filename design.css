@@ -52,14 +52,14 @@ html, body {
 /*  Basic Title  */
 h1 {
   position: absolute;
+  margin: 20px;
   top: 0;
   left: 0;
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-size: 3em;
-  text-align: center;
-  color: #fff;
+  color: #000;
   -webkit-animation: 3s fade;
   animation: 3s fade;
 }
@@ -77,6 +77,9 @@ h1 span:before {
   border-top: 1px solid #fff;
   -webkit-animation: 2.5s draw;
   animation: 2.5s draw;
+}
+.canvas{
+  margin : 20px;
 }
 h1 span:after {
   display: block;
@@ -221,10 +224,4 @@ h1 span:after {
   100% {
     opacity: 1;
   }
-}
-
-h1{
-     margin: 20px;
-     padding: 0px;
-     /* 바디에 마진이 존재한다. */
 }
